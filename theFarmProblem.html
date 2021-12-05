@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+
+//chickenLegs = 2, cowLegs = 4, pigLegs = 4
+
+let chickens = prompt('How many chickens you have?', 0);
+let cows = prompt ('How many cows you have?', 0);
+let pigs = prompt ('How many pigs you have?', 0);
+
+function animals (chickens, cows, pigs) {
+  let legs = ((chickens * 2) + (cows * 4) + (pigs * 4));
+  alert( `Total number of legs of all the animals is ${legs}` );
+}
+
+animals(chickens, cows, pigs);
+</script>

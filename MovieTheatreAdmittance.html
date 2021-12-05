@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+
+let age = prompt('How old are you?', '');
+let isSupervised = confirm("If you are under 15 years old, have you a parental supervision?");
+
+function acceptIntoMovie(age, isSupervised){
+  if (age >= 15 || isSupervised) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+alert (acceptIntoMovie(age, isSupervised));
+</script>
